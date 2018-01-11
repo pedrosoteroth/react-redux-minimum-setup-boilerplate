@@ -1,0 +1,59 @@
+{
+  "name": "react-redux-minimum-setup-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.jsx",
+  "scripts": {
+    "start": "webpack-dev-server --config ./webpack.config.dev.js"
+  },
+  "keywords": [
+    "node-module",
+    "package",
+    "es6",
+    "webpack",
+    "babel",
+    "react"
+  ],
+  "author": "Pedro Sotero",
+  "license": "ISC",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.1",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-eslint": "^8.2.1",
+    "eslint": "^3.19.0",
+    "eslint-loader": "^1.8.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^5.0.1",
+    "eslint-plugin-react": "^7.1.0",
+    "eslint-config-airbnb": "^15.0.1",
+    "react": "^16.2.0",
+    "react-dev-utils": "^4.2.1",
+    "react-dom": "^16.2.0"
+  },
+  "devDependencies": {
+    "webpack": "^3.5.5",
+    "webpack-dev-server": "^2.7.1"
+  },
+  "babel": {
+    "presets": [
+      "react",
+      [
+        "env",
+        {
+          "targets": {
+            "node": "current"
+          }
+        }
+      ]
+    ]
+  },
+  "eslintConfig": {
+    "extends": "airbnb",
+    "env": {
+      "browser": true,
+      "node": true
+    }
+  }
+}
